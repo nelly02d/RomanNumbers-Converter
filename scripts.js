@@ -32,4 +32,22 @@ const convertToRoman = (num) => {
      result += romanAndNum[i].roman;     
     }  
   };
+
+  //Return Roman value in Roman and number array object
+  return romanLet.value = result;
 };
+
+//Function for the button
+let getVal = () => {
+  let num = inputNumber.value;
+  //Callback funtion to convert number input to Roman
+  convertToRoman(num);
+}
+
+//Event Listener
+button.addEventListener('click', getVal);
+
+/*
+for loop is to loop around on romanAndNum array
+while loop is to find the match value on the array
+*/
